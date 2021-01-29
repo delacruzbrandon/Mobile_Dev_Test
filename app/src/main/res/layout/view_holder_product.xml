@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_image_product"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_margin="24dp"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_category_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#474A57"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView_image_product"
+        app:layout_constraintTop_toTopOf="@+id/imageView_image_product"
+        tools:text="Tee" />
+
+    <TextView
+        android:id="@+id/textView_name_product"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#18191F"
+        android:textSize="21dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_product"
+        app:layout_constraintEnd_toEndOf="@+id/textView_category_product"
+        app:layout_constraintStart_toStartOf="@+id/textView_category_product"
+        app:layout_constraintTop_toBottomOf="@+id/textView_category_product"
+        tools:text="Flash T-Shirt" />
+
+    <TextView
+        android:id="@+id/textView_price_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="$75"
+        android:textSize="24sp"
+        android:textColor="#18191F"
+        android:fontFamily="@font/montserrat_extrabold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_image_product"
+        app:layout_constraintStart_toStartOf="@+id/textView_name_product" />
+
+    <Button
+        android:id="@+id/button_add_product"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_image_product"
+        app:layout_constraintEnd_toEndOf="@+id/textView_name_product" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
